@@ -2,11 +2,11 @@
 # hint: Debes utilizar 'rubocop'
 # y no obtener errores ni warnings.
 
-def par(x)
-  if x % 2 == 0
+def par(number)
+  if (number % 2).zero?
     return true
   else
-    return false
+  	return false
   end
 end
 
