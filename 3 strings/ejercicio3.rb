@@ -6,3 +6,41 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+#1
+concat = []
+
+a.each_with_index do |ele1, idx|
+		concat << ele1
+		concat << b[idx]
+end
+p concat
+
+#2
+union = []
+a.each_with_index do |ele1, idx|
+	if ele1 != b[idx]
+		union << ele1
+		union << b[idx]
+	else 
+		union << ele1
+	end
+end
+p union
+
+#3
+interseccion = []
+a.each_with_index do |ele1, idx|
+	if ele1 == b[idx]
+		interseccion << ele1	
+	end	
+end
+p interseccion
+
+#4
+intercalar = []
+a.each_with_index do |ele1, idx|
+	intercalar << [ele1, b[idx]]
+end
+p intercalar
+

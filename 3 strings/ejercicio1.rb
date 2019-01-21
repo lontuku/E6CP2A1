@@ -5,3 +5,8 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def incluye(string, char)
+	string.include?(char)
+end
+
