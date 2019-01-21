@@ -10,3 +10,34 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+#1
+a.pop
+
+#2
+a.shift
+
+#3
+medio = a.length/2
+if medio % 2 != 0
+	a.delete_at(medio-1)
+else
+	a.delete_at(medio)
+end
+
+#4
+while a[-1] != 1
+	a.pop
+end 
+
+#5
+arr = []
+print a
+puts
+len = a.length
+while arr.length < len
+	arr.push(a.pop)
+	print arr
+end
+
+
+
