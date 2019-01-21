@@ -7,12 +7,11 @@
 # *****
 
 def draw_line(size)
-  puts '*' * size
+  '*' * size
 end
 
 def draw_lines(size)
-   size.times draw_line({ })
+  size.times {puts draw_line(size) }
 end
 
-draw_line 2
-draw_lines 10
+draw_lines 5
